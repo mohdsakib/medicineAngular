@@ -1,0 +1,60 @@
+<div class="card " ><!--text-center-->
+    <div class="card-header">
+    <h3>Search Stock </h3>
+    </div>
+    <div class="card-body" style="height: 750px; padding-left: 70px; padding-right: 70px; padding-top: 50px;">
+        
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col"><img src="../../../../assets/images/edit icon.png" width="50px; height25px;"/></th>
+                    <th scope="col">Batch No</th>
+                    <th scope="col">Brand Name</th>
+                    <th scope="col">Composition</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Balance Quantity</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Expiry Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr  id = "search">
+                      <td><input type="radio" disabled/></td>
+                      <td><input type="text" id="batchNo" /></td>
+                      <td><input type="text" id="name" (keyup)="searchBrandName($event)" list="brandList" />
+                          <datalist id="brandList">
+                            <option *ngFor="let item of brandArr" [value]="item.name">{{item.quantity - item.issuedQuantity}}</option>
+                          </datalist>
+                      </td>
+                      <td><input type="text" id="composition" /></td>
+                      <td><input type="text" id="quantity" /></td>
+                      <td><input type="text" id="issuedQuantity" /></td>
+                      <td><input type="text" id="mrp" /></td>
+                      <td><input type="date" id="expireDate" /></td>
+                  </tr>
+                  <tr *ngFor = "let item of stockArr" id = "data">
+                    <td><input type="radio" name="raiogroup" (change) ="getId(item.id)"/></td>
+                    <td>{{item.batchNo}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.composition}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td>{{item.quantity - item.issuedQuantity}}</td>
+                    <td>{{item.mrp}}</td>
+                    <td>{{item.expireDate | date : 'dd-MM-yyyy'}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-sm btn-primary" (click)="search()" style="align-items: center;">Search</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-sm btn-primary" (click)="open()" style="align-items: center;">Open</button>
+            </div>
+        </div>
+    
+    </div>
+</div>

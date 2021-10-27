@@ -1,0 +1,151 @@
+<div class="card "><!--text-center-->
+    <div class="card-header">
+    <h3>  Genrate Bill </h3>
+    </div>
+    <div class="card-body" style="height: 750px; padding-left: 70px; padding-right: 70px; padding-top: 150px;">
+
+        <!-- <div class="container">
+            <div class="brand-section">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="text-white">FABCART</h1>
+                    </div>
+                    <div class="col-6">
+                        <div class="company-details">
+                            <p class="text-white">assdad asd  asda asdad a sd</p>
+                            <p class="text-white">assdad asd asd</p>
+                            <p class="text-white">+91 888555XXXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="body-section">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="heading">Invoice No.: 001</h2>
+                        <p class="sub-heading">Tracking No. fabcart2025 </p>
+                        <p class="sub-heading">Order Date: 20-20-2021 </p>
+                        <p class="sub-heading">Email Address: customer@gfmail.com </p>
+                    </div>
+                    <div class="col-6">
+                        <p class="sub-heading">Full Name:  </p>
+                        <p class="sub-heading">Address:  </p>
+                        <p class="sub-heading">Phone Number:  </p>
+                        <p class="sub-heading">City,State,Pincode:  </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="body-section">
+                <h3 class="heading">Ordered Items</h3>
+                <br>
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th class="w-20">Price</th>
+                            <th class="w-20">Quantity</th>
+                            <th class="w-20">Grandtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Product Name</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-right">Sub Total</td>
+                            <td> 10.XX</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-right">Tax Total %1X</td>
+                            <td> 2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-right">Grand Total</td>
+                            <td> 12.XX</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <h3 class="heading">Payment Status: Paid</h3>
+                <h3 class="heading">Payment Mode: Cash on Delivery</h3>
+            </div>
+        
+            <div class="body-section">
+                <p>&copy; Copyright 2021 - Fabcart. All rights reserved. 
+                    <a href="https://www.fundaofwebit.com/" class="float-right">www.fundaofwebit.com</a>
+                </p>
+            </div>      
+        </div>     -->
+    
+        <div class="table-responsive">
+            <table border="1" class="table center">
+                <tr scope="row">
+                    <td>L.K.Drug House <br>
+                        Butta Near Sabji Mandi,Bareilly <br>
+                        Phone : 1234567890
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type="text" placeholder="Name" id="customerName" /><br>
+                        <input type="number" placeholder="Mobile No" id="mobileNo" />
+                    </td>
+                </tr>
+                <tr scope="row">
+                    <td>Licence No : UP25545724<br>
+                        Email : sachin@gmail.com<br>
+                        GSTIN : NHGF8254863
+                    </td>
+                    <td>GST INVOICE</td>
+                    <td>Invoice No : 
+                        Invoice Date :
+                    </td>
+                </tr>
+                
+            </table>
+            <table class="table table-bordered center">
+                <thead class="thead-dark">
+                    <tr scope="row">
+                        <th style="width: 35px;">SI</th>
+                        <th style="width: 250px;">ITEM NAME</th>
+                        <th style="width: 50px;">QTY.</th>
+                        <th  style="width: 50px;">MRP.</th>
+                        <th style="width: 50px;">EXP.</th>
+                        <th style="width: 50px;">HSN</th>
+                        <th style="width: 50px;">BATCH</th>
+                        <th style="width: 50px;">RATE</th>
+                        <th style="width: 50px;">DIS.</th>
+                        <th style="width: 50px;">SGST</th>
+                        <th style="width: 50px;">CGST</th>
+                        <th style="width: 50px;">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="serialNo"  style="width: 35px;"/></td>
+                        <td><input type="text" id="itemName" style="width: 250px;" /></td>
+                        <td><input type="text" id="quantity"  style="width: 50px;"/></td>
+                        <td><input type="text" id="mrp"  style="width: 50px;"/></td>
+                        <td><input type="text" id="expiryDate"  style="width: 50px;"/></td>
+                        <td><input type="text" id="hsnCode"  style="width: 50px;"/></td>
+                        <td><input type="text" id="batch"  style="width: 50px;"/></td>
+                        <td><input type="text" id="rate" p style="width: 50px;"/></td>
+                        <td><input type="text" id="discount"  style="width: 50px;"/></td>
+                        <td><input type="text" id="sgst" style="width: 50px;" /></td>
+                        <td><input type="text" id="cgst" style="width: 50px;" /></td>
+                        <td><input type="text" id="amount"  style="width: 50px;"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    
+    
+    </div>
+</div>
+
+<button (click)="generatePDF()">Generate PDF</button>  
